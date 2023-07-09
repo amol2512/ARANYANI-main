@@ -1,0 +1,98 @@
+{% extends 'layout.html' %}
+{% load static  %}
+
+{% block content %}
+<div class="merchandise-header">
+        <h1>Get Your Gifts</h1>
+        <p>Plant and Donate more for more gifts</p>
+    </div>
+
+
+    <div class="container" style="margin-top: 80px; position: relative;">
+        <div class="text-center mb-5">
+            <h2>Shop With Points</h2>
+        </div>
+        <div class="row mt-5" style="justify-content: space-evenly">
+            <div class="card col-md-3 shop-item-card">
+                <img src="{% static 'assets/bracelet.jpg' %}" width="100%" height="50%" alt="bracelet" class="card-img-top shop-card-item-img">
+                <div class="card-body">
+                    <h3 class="card-title">Bracelet</h3>
+                    <p>250 points</p>
+                    <button class="btn btn-danger">Get</button>
+                </div>
+            </div>
+            <div class="card col-md-3 shop-item-card">
+                <img src="{% static 'assets/bracelet.jpg' %}" width="100%" height="50%" alt="bracelet" class="card-img-top shop-card-item-img">
+                <div class="card-body">
+                    <h3 class="card-title">Bracelet</h3>
+                    <p>250 points</p>
+                    <button class="btn btn-danger">Get</button>
+                </div>
+            </div>
+            <div class="card col-md-3 shop-item-card">
+                <img src="{% static 'assets/bracelet.jpg' %}" width="100%" height="50%" alt="bracelet" class="card-img-top shop-card-item-img">
+                <div class="card-body">
+                    <h3 class="card-title">Bracelet</h3>
+                    <p>250 points</p>
+                    <button class="btn btn-danger">Get</button>
+                </div>
+            </div>
+            <div class="card col-md-3 shop-item-card">
+                <img src="{% static 'assets/tshirt.jpg' %}" width="100%" height="50%" alt="bracelet" class="card-img-top shop-card-item-img">
+                <div class="card-body">
+                    <h3 class="card-title">Tshirt</h3>
+                    <p>500 points</p>
+                    <button class="btn btn-danger">Get</button>
+                </div>
+            </div>
+            <div class="card col-md-3 shop-item-card">
+                <img src="{% static 'assets/tshirt.jpg' %}" width="100%" height="50%" alt="bracelet" class="card-img-top shop-card-item-img">
+                <div class="card-body">
+                    <h3 class="card-title">Tshirt</h3>
+                    <p>500 points</p>
+                    <button class="btn btn-danger">Get</button>
+                </div>
+            </div>
+            <div class="card col-md-3 shop-item-card">
+                <img src="{% static 'assets/tshirt.jpg' %}" width="100%" height="50%" alt="bracelet" class="card-img-top shop-card-item-img">
+                <div class="card-body">
+                    <h3 class="card-title">Tshirt</h3>
+                    <p>500 points</p>
+                    <button class="btn btn-danger">Get</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+         <img src="{% static '/assets/Aranyani_logo.png' %}" width="100px" height="100px" alt="aranyani logo"> 
+         <h2>Aranyani</h2>
+         </div>
+        <div class="footer-links mt-4 col-md-4">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#dataSection" data-scroll-to="#dataSection" class="footer-btn">data</a></li>
+            <li><a href="#graphSection" data-scroll-to="#graphSection">graph</a></li>
+            <li><a href="#impactSection" data-scroll-to="#impactSection">impact</a></li>
+            <li><a href="#teamSection" data-scroll-to="#teamSection">team</a></li>
+            <li><a href="#howSection" data-scroll-to="#howSection">how we work</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mt-4">
+          <h2>Contact Us</h2>
+          <div style="position: relative;">
+            <i class="fa fa-phone-square" style="font-size: 40px;" aria-hidden="true"></i>
+            <span style="position: absolute; top: 30%; margin-left:10px">+91-8429845032</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div style="display: grid; place-items: center;">
+        <h6>© Copyright Aranyani</h6>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

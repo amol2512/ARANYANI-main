@@ -1,0 +1,286 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block endscripts %}
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock endscripts %}
+
+{% block content %}
+<div class="header">
+    <h2 data-aos="zoom-in">ARANYANI</h2>
+  </div>
+
+  <div class="container content">
+    <section class="dataSection" id="dataSection">
+      <h2 data-aos="zoom-in" data-aos-duration="500" class="dataSection__header text-center mt-5">
+        Data Visualization
+      </h2>
+      <div class="underline bg-dark" data-aos="zoom-in" data-aos-delay="500"></div>
+      <div class="mt-5 mb-5">
+        <img
+          data-aos="flip-up"
+          src="https://climate.nasa.gov/system/resources/detail_files/24_co2-graph-061219-768px.jpg"
+          alt="the relentless rise of carbon dioxide"
+        />
+          <h3 data-aos="zoom-in" class="mt-5">The relentless rise of carbon dioxide</h3>
+          <div class="underline bg-dark mb-2"></div>
+          <p>
+            Ancient air bubbles trapped in ice enable us to step back in time and see what Earth's atmosphere, and climate, were like in the distant past. We know, for a fact that CO2 levels in the atmosphere are at an all-time high in 400000 years. 
+Beginning from 200ppm in the Ice Age, the CO2 levels have reached a recorded high of 400ppm in 2013. This recent relentless rise in CO2 shows a remarkably constant relationship with fossil-fuel burning and increasing urbanisation. If this is not stopped now, it may well be too late and CO2 levels might reach as high as 1500ppm in the coming centuries.
+          </p>
+      </div>
+
+      <div class="dataSection__researches">
+        <div data-aos="fade-right" class="dataSection__research">
+          <img
+            src="{% static 'assets/planters.jpeg' %}"
+            alt=""
+          />
+          <h3 class="mt-5">Carbon dioxide hits new high</h3>
+          <div class="underline bg-dark mb-3"></div>
+          <p>
+           Think of a future where climate change has taken an irreversible toll on us. The Earth is a hotter and wetter place. The sea level is rising at a constant rate, with upto 40 meters of increase in water levels, and there is a 3 to 4 degree Celsius increase in temperature globally, except with a drastic increase of 10 degree Celsius on the north and south pole. 
+          </p>
+        </div>
+        <div data-aos="fade-left" class="dataSection__research">
+          <img
+            src="{% static 'assets/1.jpg' %}"
+            alt=""
+          />
+          <h3 class="mt-5">Here are some understandable numbers</h3>
+          <div class="underline bg-dark mb-3"></div>
+          <p>
+            The time graduations here show changes in distribution and concentration of CO2 since 2002, at altitudes of 2-8 miles. Here, the range of yellow to red shows higher concentrations of CO2, and the blue to green range show lower CO2 concentration, with the unit of ppm (Parts per million)..
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- graph data section -->
+      <section class="graphDataSection" id="graphSection">
+        <div class="graphDataSection__header">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <h2 data-aos="zoom-in" data-aos-duration="500">Graph Data</h2>
+            <div class="underline bg-dark" data-aos="zoom-in" data-aos-delay="500"></div>
+          </div>
+        <div class="chartsSection">
+                    <div class="chartsSection__buttons">
+                        <button class="btn btn-primary" id="co2-btn">CO2 Concentration</button>
+                        <button class="btn btn-warning" id="emission-btn">Emission Graph</button>
+                    </div>
+                    <select class="form-control mt-3 mb-2" name="country" id="country-selector" style="display: none;">
+                    </select>
+                    <div class="chartsSection__charts">
+                    </div>
+                </div>
+        </div>
+      </section>
+    <!-- end graph data section -->
+    <!-- impact section -->
+    <section class="impactSection text-center" id="impactSection">
+      <div class="impactSection__header">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <h2 data-aos="zoom-in" data-aos-duration="500" class="mt-3">Our Impact</h2>
+          <div data-aos="zoom-in" data-aos-delay="500" class="underline bg-dark mb-3"></div>
+        </div>
+        <h5 data-aos="zoom-in" class="mt-3">These are what we aim to impact on:</h5>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 impactSection__left">
+          <div class="flex-side">
+            <div class="impactSection__title" style="left: 2%; bottom: 10%;">
+              <h6>Environmental Impact</h6>
+            </div>
+            <div class="mt-4 mb-4 ml-5">
+              <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="200">
+                <h3>Lowering CO2 and increasing groundwater levels</h3>
+                <p>
+                    Afforestation will cut the amount of CO2 in the atmosphere substantially,
+                  while also promoting ground fertility and water levels for a healthier
+                  ecosystem.
+                  </p>
+              </div>
+              <div data-aos="zoom-in" data-aos-duration="300" data-aos-delay="500">
+                <h3>Sustaining the planet</h3>
+                <p>
+                  Unlike the generations before us, we are more conscious than ever, and exactly this can be used to reduce our carbon footprint to secure the future for our future generations, so they don't have to deal with the same problems that we do.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="impactSection__right col-md-6 col-sm-12">
+  <div class="flex-side">
+            <h6 class="impactSection__title" style="bottom: 15%">Social Impact</h6>
+            <div class="mt-4 mb-4 ml-5" data-aos="fade-in" data-aos-delay="900">
+              <div>
+                <h3>Awareness & Health</h3>
+                <p>
+                    We as a generation have access to information and resources more than we've ever had.
+                Taking into account the consequences of the much neglected bigger-picture issues, we can use our first hand perspective to greater use through awareness and education.
+                Only with a broader collaborative effort will we be able to come close to achieving the goal of a healthier future, and simultaneously inspire generations to come to carry this forward.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- end impact section -->
+    <!-- our team section -->
+    <section class="teamSection text-center mt-6 mb-6" id="teamSection">
+      <div class="mb-5" style="display: flex; flex-direction: column; align-items: center;">
+        <h2 data-aos="zoom-in" data-aos-duration="500">Our Team</h2>
+        <div class="underline bg-dark" data-aos="zoom-in" data-aos-delay="500"></div>
+      </div>
+      <div class="row">
+        <div data-aos="flip-up" class="teamSection__user col-md-4">
+          <img
+            src="{% static 'assets/team1.jpeg' %}"
+            alt=""
+            width="190px"
+            height="180px"
+            style="border-radius: 50%;"
+          />
+          <h3>Shreyas Kalikar</h3>
+          <h4>Information Technology</h4>
+          <div class="social-links">
+            <ul>
+              <li>
+                <a class="btn btn-secondary" href="https://www.linkedin.com/in/shreyas-kalikar-4488571a0">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i> <span>Linkedin</span>
+                </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div data-aos="flip-up" class="teamSection__user col-md-4">
+          <img
+            src="{% static '/assets/team2.jpeg' %}"
+            alt=""
+            width="190px"
+            height="180px"
+            style="border-radius: 50%;"
+          />
+          <h3>Paras Jasal</h3>
+          <h4>Computer Science</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/paras-jasal-22a9b1158/" class="btn btn-secondary">
+            <i class="fa fa-linkedin" aria-hidden="true"></i> <span>Linkedin</span>
+            </a>
+          </div>
+        </div>
+        <div data-aos="flip-up" class="teamSection__user col-md-4">
+          <img
+            src="{% static '/assets/team3.jpg' %}"
+            alt=""
+            width="190px"
+            height="180px"
+            style="border-radius: 50%;"
+          />
+          <h3>Amol Sinha</h3>
+          <h4>Computer Science</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/amol-sinha-814380142/" class="btn btn-secondary">
+             <i class="fa fa-linkedin" aria-hidden="true"></i> <span>Linkedin</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our team ends -->
+    <!-- how it works section -->
+    <section class="howSection" id="howSection">
+      <h2 class="text-center" data-aos="zoom-in">How it works</h2>
+      <hr style="box-shadow: 0 4px 0 0 #000" />
+      <div class="how-row">
+        <div class="card how-card" data-aos="zoom-in" data-aos-duration="500">
+          <div class="card-body funders-card">
+            
+            <h3>FUNDING SYSTEM</h3>
+            <div class="underline red"></div>
+            <p>After the donation made by you is processed, you will recieve certification
+              stating your contribution, making the process fully transparent and up front.
+              The money donated will be delegated to multiple verified NGOs (or) the local
+              garden municipality, depending on the region. If the plant report is not submitted
+              to you withing 3 months, you will be refunded the money, where you can
+              choose to possibly replant in another region.</p>
+          </div>
+        </div>
+        <div class="row" style="width: 100%;margin-left: 1px;">
+          <div class="card planters-card col-lg-12 col-md-6 how-card" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
+            <div class="card-body">
+              <h3>FOR PLANTER</h3>
+              <div class="underline green"></div>
+              <p>Can't donate? Not a problem! You can still help the environment by contributing to a tree entity
+                being funded by others like you! You can donate a small denomination to even partially cover the charge 
+                by filling an application that vouches for your donation, and the other terms stand the same!</p>
+            </div>
+          </div>
+          <div class="card donators-card col-md-12 col-lg-6 how-card" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="500">
+            <div class="card-body">
+              <h3>FOR DONATOR</h3>
+              <div class="underline red"></div>
+              <p>For donations, we have quick, accessible, and secure portals where you can donate through
+                online payment methods such as credit, debit, or UPI! This is the money that will be sent to 
+                NGOs that will take the process of plantation forward in the region of your choice.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card wood-store-card how-card" data-aos="fade-up" data-aos-delay="1500">
+            <div class="card-body">
+              <h3>Wood Store Locator</h3>
+              <div class="underline bg-dark"></div>
+              <p>
+                Our site would also connect one to the nearest wood storage facility in case of need of wood. This feature would inform anyone in need of wood with the nearest wood storage facility, it's availability, and the contact details for the same. This would be a huge step forward and would avoid a lot of unnecessary cutting of trees.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- how it works end -->
+    <!-- ready section -->
+    <section data-aos="flip-left" class="readySection text-center mt-5">
+      <h2>Are you ready to start?</h2>
+      <a class="btn btn-danger" href="{% url 'donate' %}"
+        >Donate <span><i class="fa fa-heart" aria-hidden="true"></i></span
+      ></a>
+      <a class="btn btn-success" href="{% url 'plant' %}"
+        >Plant <span><i class="fa fa-tree" aria-hidden="true"></i></span
+      ></a>
+    </section>
+    <!-- end ready section -->
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+         <img src="{% static '/assets/Aranyani_logo.png' %}" width="100px" height="100px" alt="aranyani logo"> 
+         <h2>Aranyani</h2>
+         </div>
+        <div class="footer-links mt-4 col-md-4">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#dataSection" data-scroll-to="#dataSection" class="footer-btn">data</a></li>
+            <li><a href="#graphSection" data-scroll-to="#graphSection">graph</a></li>
+            <li><a href="#impactSection" data-scroll-to="#impactSection">impact</a></li>
+            <li><a href="#teamSection" data-scroll-to="#teamSection">team</a></li>
+            <li><a href="#howSection" data-scroll-to="#howSection">how we work</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mt-4">
+          <h2>Contact Us</h2>
+          <div style="position: relative;">
+            <i class="fa fa-phone-square" style="font-size: 40px;" aria-hidden="true"></i>
+            <span style="position: absolute; top: 30%; margin-left:10px">+91-8429845032</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div style="display: grid; place-items: center;">
+        <h6>© Copyright Aranyani</h6>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
